@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cranberry Studio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #050b10;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      background: rgba(5, 11, 16, 0.9);
+    }
+
+    .logo {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: white;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #7fdfff;
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      min-height: calc(100vh - 90px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 60px;
+      background: radial-gradient(circle at right, #0b1f2a, #02070a 60%);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-top {
+      margin-bottom: 20px;
+      color: #6fefff;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 64px;
+      line-height: 1.1;
+      color: transparent;
+      -webkit-text-stroke: 1px #4ddfff;
+    }
+
+    .hero-text h1 span {
+      display: block;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border: 2px solid #4ddfff;
+      color: #4ddfff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #4ddfff;
+      color: #021017;
+    }
+
+    .btn.primary {
+      background: #4ddfff;
+      color: #021017;
+    }
+
+    .hero-img {
+      width: 40%;
+      height: 70vh;
+      background:
+        linear-gradient(to top, #000, transparent),
+        url('https://i.pinimg.com/originals/ef/df/0b/efdf0b85d02aa76a18a6eb19372275c1.gif') center/cover no-repeat;
+      filter: brightness(0.6) contrast(1.2);
+      border-radius: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 35px 20px;
+      color: rgba(127, 223, 255, 0.35);
+      font-size: 14px;
+      border-top: 1px solid rgba(77, 223, 255, 0.08);
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 48px;
+      }
+
+      .hero-img {
+        width: 100%;
+        height: 320px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">INE & HITOMI</div>
+    <div class="menu">
+      <a href="!DOCTYPE.html">GŁÓWNA</a>
+      <a href="SOCIALE.html">SOCIALE</a>
+      <a href="ONAS.html">O NAS</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-top">
+        DUBBING ANIME | PEŁNA PROFESKA | SHIT POSTY
+      </div>
+
+      <h1>
+        <span>CRANBERRY</span>
+        <span>STUDIO</span>
+      </h1>
+
+      <div class="buttons">
+        <a href="ONAS.html" class="btn primary">O NAS</a>
+        <a href="projekty.html" class="btn">NASZE PROJEKTY</a>
+      </div>
+    </div>
+
+    <div class="hero-img"></div>
+  </section>
+
+  <div class="copyright">
+    © 2026 CRANBERRY STUDIO
+  </div>
+
+</body>
+</html>
